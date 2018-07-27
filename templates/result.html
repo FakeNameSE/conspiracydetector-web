@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Conspiracy Detector</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='w3.css') }}">
+
+	<style type="text/css">
+		table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+
+		th, td {
+			text-align: left;
+			padding: 8px;
+			border-bottom: 1px solid #ddd;
+
+		}
+
+		th {
+			background-color: #4CAF50;
+			color: white;
+		}
+	</style>
+</head>
+
+<body>
+<h1>Conspiracy Detector</h1>
+<h2>Applying the marvels of modern technology to detecting clinical paranoia</h2>
+<h3><p>Input text:</p></h3>
+<p>{{ prediction[0] }}</p>
+<h3><p>Model Parameters:</p></h3>
+<p>{{ prediction[3] }}</p>
+
+<table style="width:100%">
+  <tr>
+    <th>Verdict:</th>
+    <td>{{ prediction[1] }} <b>*</b></td>
+  </tr>
+  <tr>
+    <th>Certainty:</th>
+    <td>{{ prediction[2] }} <b>**</b></td>
+  </tr>
+</table>
+<p><b>*</b> The accuracy of predictions is a bit lower than that of the offline version because the more complex tokenizing used up too many resources for the old box serving this.</p>
+<p><b>**</b> The certainty does not represent a percentage, but rather as scikit-learn put the "the signed distance of that sample to the hyperplane". In other words, it is almost certainly not helpful for you to judge confidence and I intend to fix this soon.</p>
+<footer>
+  <p>Created by: Grant Garrett-Grossman</p>
+  <p>Test more text: <a href="/">back</a></p>
+  <p>Website with info and code: <a href="https://ggarrettgrossman.ddns.net/machine%20learning/coding/webdev/conspiracy-detector-webapp/">https://ggarrettgrossman.ddns.net/machine%20learning/coding/webdev/conspiracy-detector-webapp/</a></p>
+</footer>
+
+</body>
+</html>

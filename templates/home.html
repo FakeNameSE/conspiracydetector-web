@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Conspiracy Detector</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='w3.css') }}">
+	<style>
+		textarea {
+			width: 100%;
+			height: 150px;
+			padding: 12px 20px;
+			box-sizing: border-box;
+			border: 2px solid blue;
+			border-radius: 4px;
+			background-color: #f8f8f8;
+			resize: none;
+		}
+
+		input[type=button], input[type=submit], input[type=reset] {
+			background-color: #4CAF50;
+			border: none;
+			color: white;
+			padding: 16px 32px;
+			text-decoration: none;
+			margin: 4px 2px;
+			cursor: pointer;
+			width: 100%
+		}
+	</style>
+</head>
+
+<body>
+<h1>Conspiracy Detector</h1>
+<h2>Applying the marvels of modern technology to detecting clinical paranoia</h2>
+
+<form action = "/analyze" method="POST">
+<textarea autofocus required name="input_text" placeholder="Input text here...">
+</textarea>
+<p> <input type ="submit" value="Deliberate..." /> </p>
+</form>
+
+<h2>What does this do?</h2>
+<p>Conspiracy Detector uses the marvels of miracles of modern mathematics and computer science to solve the prickly problem of detecting people who are totally off their rocker. In application, this means using a Binary Support Vector Machine to classify the input text based off of linguistic indicators.</p>
+
+<footer>
+  <p>Created by: Grant Garrett-Grossman</p>
+  <p>Website with info and code: <a href="https://ggarrettgrossman.ddns.net/machine%20learning/coding/webdev/conspiracy-detector-webapp/">https://ggarrettgrossman.ddns.net/machine%20learning/coding/webdev/conspiracy-detector-webapp/</a></p>
+</footer>
+
+</body>
+</html>
