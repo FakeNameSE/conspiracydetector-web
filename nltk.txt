@@ -1,0 +1,15 @@
+inaugural
+wordnet_ic
+twitter_samples
+movie_reviews
+omw
+shakespeare
+stopwords
+names
+treebank
+genesis
+words
+cmudict
+gutenberg
+wordnet
+gazetteers 
