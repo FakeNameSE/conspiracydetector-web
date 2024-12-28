@@ -13,5 +13,5 @@ scipy==1.6.1
 six==1.11.0
 sklearn==0.0
 threadpoolctl==2.1.0
-tqdm==4.59.0
+tqdm==4.66.3
 Werkzeug==3.0.6
